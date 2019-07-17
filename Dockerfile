@@ -4,5 +4,6 @@ WORKDIR /FutuOpenD
 COPY ./AppData.dat /FutuOpenD/AppData.dat
 COPY ./FutuOpenD /FutuOpenD/FutuOpenD
 COPY ./FutuOpenD.xml /FutuOpenD/FutuOpenD.xml
+COPY docker-entrypoint.sh /
 
-CMD [ "/FutuOpenD/FutuOpenD" ]
+ENTRYPOINT ["/docker-entrypoint.sh"]
