@@ -2,14 +2,14 @@
 
 FUTU_HOME=${FUTU_HOME:-"/FutuOpenD"}
 
-console=${console:-0}
+console=${console:-1}
 no_monitor=${no_monitor:-1}
 cfg_file=${cfg_file:-"$FUTU_HOME/FutuOpenD.xml"}
 lang=${lang:-chs}
 api_port=${api_port:-11111}
 log_level=${log_level:-no}
 
-OPTS="-console=$console -no_monitor=$no_monitor -cfg_file=$cfg_file -lang=$lang -api_port=$api_port -log_level=$log_level"
+OPTS="-cfg_file=$cfg_file -lang=$lang -api_port=$api_port -log_level=$log_level"
 
 if [ $login_account ];then
 	OPTS="$OPTS -login_account=$login_account"
